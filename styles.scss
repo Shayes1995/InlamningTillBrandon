@@ -1,0 +1,1009 @@
+@import "mixins/differentmixins";
+@import "mixins/colors";
+
+body {
+  width: auto;
+  height: auto;
+}
+
+main {
+  width: auto;
+  height: auto;
+
+
+  @media screen and (min-width: 600px) {
+    width: auto;
+    height: auto;
+  }
+
+}
+
+// --------- kod för startsida samt ram för header och footer
+.wholeTopPage {
+  @include size (auto, auto);
+
+
+  .topUpperForHeader {
+    @include size (auto, 8rem);
+    background-color: $theme-color;
+
+    @media screen and (min-width: 600px) {
+      background-color: $theme-color;
+      @include size (100%, 8rem);
+    }
+
+    header {
+      @include myFlex (row, center, center);
+      height: 8rem;
+
+
+      // #iHelp {
+      //   @include size (8rem, 8rem);
+      //   object-fit: middle;
+      // }
+
+      h1 {
+        color: white;
+        @include header-style ('Montserrat', 15.5vw, center);
+
+        @media screen and (min-width:600px) {
+          font-size: 6rem;
+
+        }
+      }
+    }
+  }
+
+  .navBar {
+    @include size (auto, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media screen and (min-width:600px) {
+      @include size (auto, 4rem);
+    }
+
+    ul {
+      @include size (100%, auto);
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      @media screen and (min-width:600px) {
+        @include mediumFlexItems (row, space-evenly, center);
+      }
+
+      li {
+        @include size (90%, auto);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+
+
+        @media screen and (min-width:600px) {
+          @include size (100%, 2rem);
+          @include mediumFlexItems (row, space-evenly, center);
+        }
+
+        &:hover {
+          list-style-position: inside;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(12, 78, 128);
+          font-family: 'Montserrat';
+          font-size: 3vw;
+          display: flex;
+          justify-content: center;
+          background: linear-gradient(to left, rgb(255, 255, 255) 50%, lightblue 50%) right;
+          background-size: 300%;
+
+
+
+          @media screen and (min-width:600px) {
+            font-size: 1rem;
+
+          }
+
+          @media screen and (min-width:1000px) {
+            font-size: 1.5rem;
+
+          }
+
+          &:hover {
+            background-color: rgb(80, 122, 221);
+            background-position: left;
+            width: auto;
+            color: rgb(255, 255, 255);
+            border-radius: 4px;
+            transition: .6s ease-out;
+
+
+            @media screen and (min-width:1000px) {
+              width: 14rem;
+
+            }
+
+          }
+        }
+
+      }
+    }
+  }
+
+
+
+  .bottomPageDown {
+    @include size (auto, auto);
+    @include mediumFlexItems (column, space-around, center);
+
+    .vertical-line {
+      display: block;
+
+      @media screen and (min-width:600px) {
+        @include size (0.5px, 25rem);
+        background-color: black;
+        display: inline;
+      }
+    }
+
+    @media screen and (min-width:600px) {
+      @include size (auto, auto);
+      @include myFlex (row-reverse, space-between, center);
+      background-color: rgb(249, 250, 251);
+    }
+
+
+
+    .leftSide {
+      @include size (100%, auto);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      p {
+        color: rgb(0, 0, 0);
+        font-size: 0.8rem;
+        font-family: 'Montserrat';
+
+        @media (min-width:600px) {
+          font-size: 1rem;
+          width: 90%;
+          align-self: flex-end;
+
+        }
+
+        @media (min-width:1200px) {
+          font-size: 1.2rem;
+          align-self: flex-end;
+
+        }
+      }
+
+      .leftSideBox {
+        @include size (auto, 30%);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width:600px) {
+          @include size (95%, 10rem);
+          align-self: flex-end;
+
+        }
+
+
+        h2 {
+          color: rgb(0, 0, 0);
+          font-family: 'Montserrat';
+          font-size: 1.5em;
+          display: flex;
+          align-self: center;
+
+
+          @media screen and (min-width:600px) {
+            font-size: 1.9em;
+            align-self: center;
+
+          }
+
+          @media screen and (min-width:1200px) {
+            @include size (auto, 40%);
+            font-size: 3em;
+            align-self: center;
+
+          }
+
+        }
+      }
+
+
+    }
+
+
+    .rightSide {
+      @include size (100%, 50%);
+      display: flex;
+      justify-content: center;
+      align-self: center;
+
+
+      #fillersModell {
+        @include size (100%, 90%);
+        object-fit: contain;
+      }
+    }
+  }
+
+}
+
+.middlePage {
+  @include size (auto, auto);
+  @include mediumFlexItems (column, space-around, center);
+
+  .vertical-line {
+    display: block;
+
+    @media screen and (min-width:600px) {
+      @include size (0.5px, 25rem);
+      background-color: black;
+      display: inline;
+    }
+  }
+
+  @media screen and (min-width:600px) {
+    @include size (auto, auto);
+    @include myFlex (row, space-around, center);
+    background-color: rgb(249, 250, 251);
+
+  }
+
+  .leftSide {
+    @include size (100%, auto);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    p {
+      color: rgb(0, 0, 0);
+      font-size: 0.8em;
+      font-family: 'Montserrat';
+
+      @media (min-width:600px) {
+        font-size: 1rem;
+        width: 90%;
+
+      }
+
+      @media (min-width:1200px) {
+        font-size: 1.2rem;
+
+      }
+    }
+
+    .leftSideBox {
+      @include size (auto, 30%);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+
+      @media screen and (min-width:600px) {
+        @include size (95%, 10rem);
+      }
+
+
+      h2 {
+        color: rgb(0, 0, 0);
+        font-family: 'Montserrat';
+        font-size: 1.5em;
+        align-self: center;
+
+        @media screen and (min-width:600px) {
+          font-size: 1.9em;
+
+        }
+
+        @media screen and (min-width:1200px) {
+          font-size: 3em;
+          @include size (auto, 40%);
+
+        }
+      }
+    }
+  }
+
+  .rightSide {
+    @include size (100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    #fillers {
+      @include size (100%, 90%);
+      object-fit: contain;
+    }
+
+  }
+}
+
+footer {
+  .copyWrite {
+    @include size (auto, auto);
+    background-color: #d4235e;
+    display: flex;
+
+
+    .copyWriteBoxes {
+      @include size (auto, 100%);
+      display: flex;
+      justify-content: space-around;
+
+
+      p {
+        font-family: 'Montserrat';
+        font-size: 0.8rem;
+        align-self: center;
+        color: whitesmoke;
+      }
+    }
+  }
+
+
+
+}
+
+.divFooter {
+  @include size (auto, auto);
+
+
+  .upperBoxes {
+    @include size (auto, 10rem);
+    display: flex;
+
+    .footerBox {
+      @include size (50%, auto);
+      display: flex;
+      justify-content: center;
+      background-color: #e1d7ce;
+
+      @media screen and (min-width:600px) {
+        @include size (100%, 100%);
+
+
+      }
+
+      #iHelp {
+        @include size (12rem, auto);
+        object-fit: contain;
+
+        @media (min-width:1200px) {
+          @include size (22rem, auto);
+
+        }
+      }
+
+      ul {
+        @include size (100%, auto);
+        @include mediumFlexItems (column, space-evenly, center);
+        list-style: none;
+
+        @media screen and (min-width:1200px) {
+          flex-direction: row;
+          justify-content: space-evenly;
+
+        }
+
+        a {
+          text-decoration: underline;
+          color: white;
+          font-family: 'Montserrat';
+
+          @media (min-width:900px) {
+            font-size: 1rem;
+            align-self: flex-end;
+
+          }
+
+          @media (min-width:1200px) {
+            font-size: 1.2rem;
+            align-self: flex-end;
+
+          }
+        }
+      }
+    }
+
+  }
+}
+
+//------------ Om oss börjar här
+.omOssPage {
+  @include size (auto, auto);
+
+  border: 2px solid black;
+
+  .omOssRubrik {
+    @include size (auto, 5rem);
+
+    h2 {
+      text-align: center;
+      font-family: 'Montserrat';
+      font-size: 2rem;
+    }
+  }
+
+}
+
+.ourEmployes {
+  @include size (auto, auto);
+  @include mediumFlexItems (column, space-evenly, center);
+
+  @media screen and (min-width:600px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .employes {
+    @include size (15rem, auto);
+    align-content: center;
+    margin: 20px;
+
+    #employePhoto {
+      @include size (15rem, auto);
+      object-fit: contain;
+      border-radius: 20rem;
+    }
+
+    h3 {
+      font-family: 'Montserrat'
+    }
+
+    p {
+      color: rgb(179, 29, 29);
+      font-size: 0.8em;
+      text-align: center;
+      overflow-wrap: break-word;
+      font-family: 'Montserrat';
+      font-family: 100;
+    }
+  }
+}
+
+//-------Våra produkter börjar här 
+.productMiddlePage {
+  @include size (auto, auto);
+  @include miniFlex (column);
+
+  h2 {
+    font-family: 'Montserrat';
+    align-self: center;
+  }
+
+
+
+  @media screen and (min-width:600px) {
+    flex-direction: column;
+
+  }
+
+  .productLeftSide {
+    @include size (auto, auto);
+    @include mediumFlexItems (column, space-evenly, center);
+
+
+    @media screen and (min-width: 600px) {
+      @include size (auto, auto);
+      @include mediumFlexWrap (row, space-evenly, wrap);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include size (auto, auto);
+      @include mediumFlexWrap (row, space-evenly, wrap);
+
+    }
+
+    .productone {
+      @include size (90%, 15rem);
+      border: 1px solid black;
+      display: flex;
+      margin: 10px;
+
+      @media screen and (min-width: 600px) {
+        @include size (30rem, 10rem);
+        justify-content: space-evenly;
+        margin: 10px;
+      }
+
+
+
+      .leftSideProduct {
+        @include size (90%, auto);
+
+
+        h3 {
+          font-family: 'Montserrat';
+          margin: 10px;
+        }
+
+        h4 {
+          font-family: 'Montserrat';
+          font-weight: bolder;
+          margin: 10px;
+        }
+
+      }
+
+      .rightSideButton {
+        @include size (40%, auto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+        button {
+          @include size (12rem, 2.5rem);
+          background-color: orange;
+          color: white;
+          font-family: 'Montserrat';
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.pricelistRightSide {
+  @include size (27rem, 27rem);
+  @include mediumFlex (row, space-evenly, center);
+
+  @media screen and (min-width:600px) {
+    @include size (27rem, 30rem);
+    align-self: center;
+
+  }
+
+  .treatment {
+    @include size (45%, auto);
+
+
+    li {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px dotted black;
+      margin-top: 20px;
+      text-decoration: none;
+      list-style-type: none;
+    }
+  }
+
+  .vertical-line {
+    @include size (0.05px, 24rem);
+    border: 1px dotted black;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+  .treatmentPrice {
+    @include size (45%, auto);
+
+    ul {
+      @include size (auto, auto);
+    }
+
+
+    li {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px dotted black;
+      margin-top: 20px;
+      text-decoration: none;
+      list-style-type: none;
+      text-align: end;
+
+    }
+  }
+}
+
+//---------- Referenser börjar här
+.reviewBigBox {
+  @include size (auto, auto);
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: 'Montserrat';
+    text-align: center;
+  }
+
+  h3 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+  }
+
+  .upperBoxReview {
+    @include size (100%, auto);
+
+
+    @media screen and (min-width:600px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .bigBoxScoreAverage {
+    @include size (100%, auto);
+    text-align: center;
+
+
+    @media screen and (min-width:600px) {
+      text-align: center;
+    }
+
+    .fa {
+      font-size: 25px;
+    }
+
+    .checked {
+      color: $ratingstar-color;
+    }
+
+    .unchecked {
+      color: rgb(110, 104, 104);
+    }
+  }
+
+  .bigBoxBars {
+    @include size (100%, auto);
+
+    .side {
+      float: left;
+      width: 15%;
+      margin-top: 10px;
+    }
+
+    .middle {
+      margin-top: 10px;
+      float: left;
+      width: 70%;
+    }
+
+
+    .bar-container {
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      color: white;
+    }
+
+    .bar-5 {
+      @include size (60%, 18px);
+      background-color: #04AA6D;
+    }
+
+    .bar-4 {
+      @include size (30%, 18px);
+      background-color: #2196F3;
+    }
+
+    .bar-3 {
+      @include size (10%, 18px);
+      background-color: #00bcd4;
+    }
+
+    .bar-2 {
+      @include size (4%, 18px);
+      background-color: #ff9800;
+    }
+
+    .bar-1 {
+      @include size (15%, 18px);
+      background-color: #f44336;
+    }
+
+    @media (max-width: 400px) {
+
+      .side,
+      .middle {
+        width: 100%;
+      }
+
+      .right {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.bigBoxReviews {
+  @include size (100%, auto);
+  @include bigFlex (row, space-between, center, wrap);
+
+  @media screen and (min-width: 600px) {
+    @include bigFlex (row, space-between, center, wrap);
+
+  }
+
+  @media screen and (min-width: 1000px) {
+    @include bigFlex (row, space-evenly, center, wrap);
+  }
+
+
+
+  .customerReview {
+    @include size (30rem, 10rem);
+    border: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 2rem;
+    background-color: #fcfbf3;
+
+    @media screen and (min-width: 720px) {
+      @include size (25rem, 13rem);
+      justify-content: center;
+    }
+
+  }
+
+  .customerNameLogo {
+    @include size (auto, 4rem);
+  }
+
+  .rightSideReviewStar {
+    @include size (45%, 4rem);
+    @include mediumFlexItems (row, center, center);
+
+    .fa {
+      font-size: 25px;
+    }
+
+    .checked {
+      color: $ratingstar-color;
+    }
+
+    .unchecked {
+      color: rgb(110, 104, 104);
+    }
+  }
+
+
+
+
+}
+
+.accountInfo {
+  @include size (44%, 4rem);
+  margin-left: 30px;
+
+  h3 {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  p {
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    color: rgb(154, 153, 153);
+  }
+
+
+}
+
+#male-review {
+  @include size (4rem, 4rem);
+}
+
+.writeReview {
+  @include size (100%, 30rem);
+  display: flex;
+  flex-direction: column;
+
+  .boxesUserInfo {
+    @include size (95%, 40%);
+    @include mediumFlex (row, center, center)
+  }
+
+  .writeBox {
+    @include size (17rem, 100%);
+    @include mediumFlexItems (column, center, center);
+
+    input {
+      @include size (10.5rem, 1.5rem);
+      font-size: 1rem;
+      margin: 10px;
+    }
+
+    select {
+      text-overflow: hidden;
+      @include size (10.5rem, 1.5rem);
+
+      option:first-child {
+        display: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+      }
+    }
+
+
+  }
+
+  .userInput {
+    @include size (100%, 60%);
+
+    .comments {
+      @include size (100%, 50%);
+      @include mediumFlexItems (column, center, center);
+
+      input {
+        @include size (24rem, 8rem);
+      }
+
+      button {
+        @include size (10rem, 2.4rem);
+        margin-top: 10px;
+        background-color: orange;
+      }
+
+    }
+
+    .ratings {
+      @include size (auto, 22%);
+      @include mediumFlex (row-reverse, center, flex-start);
+
+      .fa {
+        color: rgb(106, 105, 105);
+        font-size: 50px;
+        transition: 0.3s all;
+
+        &:hover {
+          color: $ratingstar-color;
+
+        }
+
+        &:hover~span {
+          color: $ratingstar-color;
+        }
+      }
+    }
+
+  }
+}
+
+//----Kontakt börjar här
+.bigContactBox {
+  @include size (auto, auto);
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+    @include size (auto, 47.3rem);
+
+  }
+
+  .smallBoxesContact {
+    @include size (auto, 100%);
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:600px) {
+      flex-direction: row;
+      width: 100%;
+
+    }
+
+    .ourBuilding {
+      @include size (auto, 50%);
+
+      #myBuilding {
+        @include size (100%, 50%);
+        object-fit: contain;
+
+        @media screen and (min-width:600px) {
+          width: 40rem;
+          height: 40rem;
+        }
+      }
+    }
+
+    .ourAdress {
+      @include size (auto, 50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      p {
+        font-size: 0.8rem;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        margin: 1.4rem;
+      }
+
+
+      span i {
+        font-size: 2em;
+        margin: 0.9rem;
+        color: $contact-iconcolor;
+      }
+
+      @media screen and (min-width:600px) {
+        width: 40%;
+        height: 29.4rem;
+      }
+
+      .ourInformationBox {
+        @include size (47%, auto);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  .smallBoxesContactTwo {
+    @include size (auto, 50%);
+  }
+
+  .AskUs {
+    @include size (100%, 25rem);
+    @include miniFlex(column);
+
+    .AskUsBox {
+      @include size (95%, 40%);
+      @include mediumFlex(row, center, center)
+    }
+
+    .writeBox {
+      @include size (17rem, 100%);
+      @include mediumFlexItems (column, center, center);
+
+      input {
+        @include size (10rem, 1.5rem);
+        font-size: 1rem;
+        margin: 10px;
+      }
+
+      select {
+        text-overflow: hidden;
+        @include size (10rem, 1.5rem);
+
+        option:first-child {
+          display: none;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+        }
+      }
+    }
+
+    .userInput {
+      @include size (100%, 20%);
+
+      .comments {
+        @include size (100%, auto);
+        @include mediumFlexItems (column, center, center);
+
+        input {
+          @include size (20rem, 8rem);
+        }
+
+        button {
+          @include size (10rem, 2.4rem);
+          margin-top: 10px;
+          background-color: orange;
+        }
+      }
+    }
+  }
+}

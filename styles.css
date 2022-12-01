@@ -1,0 +1,1015 @@
+body {
+  width: auto;
+  height: auto;
+}
+
+main {
+  width: auto;
+  height: auto;
+}
+@media screen and (min-width: 600px) {
+  main {
+    width: auto;
+    height: auto;
+  }
+}
+
+.wholeTopPage {
+  width: auto;
+  height: auto;
+}
+.wholeTopPage .topUpperForHeader {
+  width: auto;
+  height: 8rem;
+  background-color: #e1d7ce;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .topUpperForHeader {
+    background-color: #e1d7ce;
+    width: 100%;
+    height: 8rem;
+  }
+}
+.wholeTopPage .topUpperForHeader header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 8rem;
+}
+.wholeTopPage .topUpperForHeader header h1 {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 15.5vw;
+  align-self: center;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .topUpperForHeader header h1 {
+    font-size: 6rem;
+  }
+}
+.wholeTopPage .navBar {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .navBar {
+    width: auto;
+    height: 4rem;
+  }
+}
+.wholeTopPage .navBar ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.wholeTopPage .navBar ul li {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .navBar ul li {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.wholeTopPage .navBar ul li:hover {
+  list-style-position: inside;
+}
+.wholeTopPage .navBar ul li a {
+  text-decoration: none;
+  color: rgb(12, 78, 128);
+  font-family: "Montserrat";
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to left, rgb(255, 255, 255) 50%, lightblue 50%) right;
+  background-size: 300%;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .navBar ul li a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .wholeTopPage .navBar ul li a {
+    font-size: 1.5rem;
+  }
+}
+.wholeTopPage .navBar ul li a:hover {
+  background-color: rgb(80, 122, 221);
+  background-position: left;
+  width: auto;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  transition: 0.6s ease-out;
+}
+@media screen and (min-width: 1000px) {
+  .wholeTopPage .navBar ul li a:hover {
+    width: 14rem;
+  }
+}
+.wholeTopPage .bottomPageDown {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.wholeTopPage .bottomPageDown .vertical-line {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .bottomPageDown .vertical-line {
+    width: 0.5px;
+    height: 25rem;
+    background-color: black;
+    display: inline;
+  }
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .bottomPageDown {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgb(249, 250, 251);
+  }
+}
+.wholeTopPage .bottomPageDown .leftSide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.wholeTopPage .bottomPageDown .leftSide p {
+  color: rgb(0, 0, 0);
+  font-size: 0.8rem;
+  font-family: "Montserrat";
+}
+@media (min-width: 600px) {
+  .wholeTopPage .bottomPageDown .leftSide p {
+    font-size: 1rem;
+    width: 90%;
+    align-self: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .wholeTopPage .bottomPageDown .leftSide p {
+    font-size: 1.2rem;
+    align-self: flex-end;
+  }
+}
+.wholeTopPage .bottomPageDown .leftSide .leftSideBox {
+  width: auto;
+  height: 30%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .bottomPageDown .leftSide .leftSideBox {
+    width: 95%;
+    height: 10rem;
+    align-self: flex-end;
+  }
+}
+.wholeTopPage .bottomPageDown .leftSide .leftSideBox h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  display: flex;
+  align-self: center;
+}
+@media screen and (min-width: 600px) {
+  .wholeTopPage .bottomPageDown .leftSide .leftSideBox h2 {
+    font-size: 1.9em;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wholeTopPage .bottomPageDown .leftSide .leftSideBox h2 {
+    width: auto;
+    height: 40%;
+    font-size: 3em;
+    align-self: center;
+  }
+}
+.wholeTopPage .bottomPageDown .rightSide {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.wholeTopPage .bottomPageDown .rightSide #fillersModell {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.middlePage {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.middlePage .vertical-line {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .middlePage .vertical-line {
+    width: 0.5px;
+    height: 25rem;
+    background-color: black;
+    display: inline;
+  }
+}
+@media screen and (min-width: 600px) {
+  .middlePage {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    background-color: rgb(249, 250, 251);
+  }
+}
+.middlePage .leftSide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.middlePage .leftSide p {
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  font-family: "Montserrat";
+}
+@media (min-width: 600px) {
+  .middlePage .leftSide p {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .middlePage .leftSide p {
+    font-size: 1.2rem;
+  }
+}
+.middlePage .leftSide .leftSideBox {
+  width: auto;
+  height: 30%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .middlePage .leftSide .leftSideBox {
+    width: 95%;
+    height: 10rem;
+  }
+}
+.middlePage .leftSide .leftSideBox h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  align-self: center;
+}
+@media screen and (min-width: 600px) {
+  .middlePage .leftSide .leftSideBox h2 {
+    font-size: 1.9em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .middlePage .leftSide .leftSideBox h2 {
+    font-size: 3em;
+    width: auto;
+    height: 40%;
+  }
+}
+.middlePage .rightSide {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.middlePage .rightSide #fillers {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer .copyWrite {
+  width: auto;
+  height: auto;
+  background-color: #d4235e;
+  display: flex;
+}
+footer .copyWrite .copyWriteBoxes {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .copyWrite .copyWriteBoxes p {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  align-self: center;
+  color: whitesmoke;
+}
+
+.divFooter {
+  width: auto;
+  height: auto;
+}
+.divFooter .upperBoxes {
+  width: auto;
+  height: 10rem;
+  display: flex;
+}
+.divFooter .upperBoxes .footerBox {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #e1d7ce;
+}
+@media screen and (min-width: 600px) {
+  .divFooter .upperBoxes .footerBox {
+    width: 100%;
+    height: 100%;
+  }
+}
+.divFooter .upperBoxes .footerBox #iHelp {
+  width: 12rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (min-width: 1200px) {
+  .divFooter .upperBoxes .footerBox #iHelp {
+    width: 22rem;
+    height: auto;
+  }
+}
+.divFooter .upperBoxes .footerBox ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+@media screen and (min-width: 1200px) {
+  .divFooter .upperBoxes .footerBox ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.divFooter .upperBoxes .footerBox ul a {
+  text-decoration: underline;
+  color: white;
+  font-family: "Montserrat";
+}
+@media (min-width: 900px) {
+  .divFooter .upperBoxes .footerBox ul a {
+    font-size: 1rem;
+    align-self: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .divFooter .upperBoxes .footerBox ul a {
+    font-size: 1.2rem;
+    align-self: flex-end;
+  }
+}
+
+.omOssPage {
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+}
+.omOssPage .omOssRubrik {
+  width: auto;
+  height: 5rem;
+}
+.omOssPage .omOssRubrik h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+
+.ourEmployes {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .ourEmployes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.ourEmployes .employes {
+  width: 15rem;
+  height: auto;
+  align-content: center;
+  margin: 20px;
+}
+.ourEmployes .employes #employePhoto {
+  width: 15rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 20rem;
+}
+.ourEmployes .employes h3 {
+  font-family: "Montserrat";
+}
+.ourEmployes .employes p {
+  color: rgb(179, 29, 29);
+  font-size: 0.8em;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: "Montserrat";
+  font-family: 100;
+}
+
+.productMiddlePage {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.productMiddlePage h2 {
+  font-family: "Montserrat";
+  align-self: center;
+}
+@media screen and (min-width: 600px) {
+  .productMiddlePage {
+    flex-direction: column;
+  }
+}
+.productMiddlePage .productLeftSide {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .productMiddlePage .productLeftSide {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .productMiddlePage .productLeftSide {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+.productMiddlePage .productLeftSide .productone {
+  width: 90%;
+  height: 15rem;
+  border: 1px solid black;
+  display: flex;
+  margin: 10px;
+}
+@media screen and (min-width: 600px) {
+  .productMiddlePage .productLeftSide .productone {
+    width: 30rem;
+    height: 10rem;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+}
+.productMiddlePage .productLeftSide .productone .leftSideProduct {
+  width: 90%;
+  height: auto;
+}
+.productMiddlePage .productLeftSide .productone .leftSideProduct h3 {
+  font-family: "Montserrat";
+  margin: 10px;
+}
+.productMiddlePage .productLeftSide .productone .leftSideProduct h4 {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  margin: 10px;
+}
+.productMiddlePage .productLeftSide .productone .rightSideButton {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.productMiddlePage .productLeftSide .productone .rightSideButton button {
+  width: 12rem;
+  height: 2.5rem;
+  background-color: orange;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.pricelistRightSide {
+  width: 27rem;
+  height: 27rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+}
+@media screen and (min-width: 600px) {
+  .pricelistRightSide {
+    width: 27rem;
+    height: 30rem;
+    align-self: center;
+  }
+}
+.pricelistRightSide .treatment {
+  width: 45%;
+  height: auto;
+}
+.pricelistRightSide .treatment li {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px dotted black;
+  margin-top: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.pricelistRightSide .vertical-line {
+  width: 0.05px;
+  height: 24rem;
+  border: 1px dotted black;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.pricelistRightSide .treatmentPrice {
+  width: 45%;
+  height: auto;
+}
+.pricelistRightSide .treatmentPrice ul {
+  width: auto;
+  height: auto;
+}
+.pricelistRightSide .treatmentPrice li {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px dotted black;
+  margin-top: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: end;
+}
+
+.reviewBigBox {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.reviewBigBox h2 {
+  font-family: "Montserrat";
+  text-align: center;
+}
+.reviewBigBox h3 {
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+.reviewBigBox .upperBoxReview {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 600px) {
+  .reviewBigBox .upperBoxReview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.reviewBigBox .bigBoxScoreAverage {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .reviewBigBox .bigBoxScoreAverage {
+    text-align: center;
+  }
+}
+.reviewBigBox .bigBoxScoreAverage .fa {
+  font-size: 25px;
+}
+.reviewBigBox .bigBoxScoreAverage .checked {
+  color: #fea500;
+}
+.reviewBigBox .bigBoxScoreAverage .unchecked {
+  color: rgb(110, 104, 104);
+}
+.reviewBigBox .bigBoxBars {
+  width: 100%;
+  height: auto;
+}
+.reviewBigBox .bigBoxBars .side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+.reviewBigBox .bigBoxBars .middle {
+  margin-top: 10px;
+  float: left;
+  width: 70%;
+}
+.reviewBigBox .bigBoxBars .bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+.reviewBigBox .bigBoxBars .bar-5 {
+  width: 60%;
+  height: 18px;
+  background-color: #04AA6D;
+}
+.reviewBigBox .bigBoxBars .bar-4 {
+  width: 30%;
+  height: 18px;
+  background-color: #2196F3;
+}
+.reviewBigBox .bigBoxBars .bar-3 {
+  width: 10%;
+  height: 18px;
+  background-color: #00bcd4;
+}
+.reviewBigBox .bigBoxBars .bar-2 {
+  width: 4%;
+  height: 18px;
+  background-color: #ff9800;
+}
+.reviewBigBox .bigBoxBars .bar-1 {
+  width: 15%;
+  height: 18px;
+  background-color: #f44336;
+}
+@media (max-width: 400px) {
+  .reviewBigBox .bigBoxBars .side,
+.reviewBigBox .bigBoxBars .middle {
+    width: 100%;
+  }
+  .reviewBigBox .bigBoxBars .right {
+    display: none;
+  }
+}
+
+.bigBoxReviews {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 600px) {
+  .bigBoxReviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .bigBoxReviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+}
+.bigBoxReviews .customerReview {
+  width: 30rem;
+  height: 10rem;
+  border: 0.5px solid black;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 2rem;
+  background-color: #fcfbf3;
+}
+@media screen and (min-width: 720px) {
+  .bigBoxReviews .customerReview {
+    width: 25rem;
+    height: 13rem;
+    justify-content: center;
+  }
+}
+.bigBoxReviews .customerNameLogo {
+  width: auto;
+  height: 4rem;
+}
+.bigBoxReviews .rightSideReviewStar {
+  width: 45%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bigBoxReviews .rightSideReviewStar .fa {
+  font-size: 25px;
+}
+.bigBoxReviews .rightSideReviewStar .checked {
+  color: #fea500;
+}
+.bigBoxReviews .rightSideReviewStar .unchecked {
+  color: rgb(110, 104, 104);
+}
+
+.accountInfo {
+  width: 44%;
+  height: 4rem;
+  margin-left: 30px;
+}
+.accountInfo h3 {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-size: 1rem;
+}
+.accountInfo p {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  color: rgb(154, 153, 153);
+}
+
+#male-review {
+  width: 4rem;
+  height: 4rem;
+}
+
+.writeReview {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.writeReview .boxesUserInfo {
+  width: 95%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+.writeReview .writeBox {
+  width: 17rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.writeReview .writeBox input {
+  width: 10.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  margin: 10px;
+}
+.writeReview .writeBox select {
+  text-overflow: hidden;
+  width: 10.5rem;
+  height: 1.5rem;
+}
+.writeReview .writeBox select option:first-child {
+  display: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.writeReview .userInput {
+  width: 100%;
+  height: 60%;
+}
+.writeReview .userInput .comments {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.writeReview .userInput .comments input {
+  width: 24rem;
+  height: 8rem;
+}
+.writeReview .userInput .comments button {
+  width: 10rem;
+  height: 2.4rem;
+  margin-top: 10px;
+  background-color: orange;
+}
+.writeReview .userInput .ratings {
+  width: auto;
+  height: 22%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-self: flex-start;
+}
+.writeReview .userInput .ratings .fa {
+  color: rgb(106, 105, 105);
+  font-size: 50px;
+  transition: 0.3s all;
+}
+.writeReview .userInput .ratings .fa:hover {
+  color: #fea500;
+}
+.writeReview .userInput .ratings .fa:hover ~ span {
+  color: #fea500;
+}
+
+.bigContactBox {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .bigContactBox {
+    flex-direction: row;
+    width: auto;
+    height: 47.3rem;
+  }
+}
+.bigContactBox .smallBoxesContact {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .bigContactBox .smallBoxesContact {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.bigContactBox .smallBoxesContact .ourBuilding {
+  width: auto;
+  height: 50%;
+}
+.bigContactBox .smallBoxesContact .ourBuilding #myBuilding {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 600px) {
+  .bigContactBox .smallBoxesContact .ourBuilding #myBuilding {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+.bigContactBox .smallBoxesContact .ourAdress {
+  width: auto;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bigContactBox .smallBoxesContact .ourAdress p {
+  font-size: 0.8rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  margin: 1.4rem;
+}
+.bigContactBox .smallBoxesContact .ourAdress span i {
+  font-size: 2em;
+  margin: 0.9rem;
+  color: #063459;
+}
+@media screen and (min-width: 600px) {
+  .bigContactBox .smallBoxesContact .ourAdress {
+    width: 40%;
+    height: 29.4rem;
+  }
+}
+.bigContactBox .smallBoxesContact .ourAdress .ourInformationBox {
+  width: 47%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bigContactBox .smallBoxesContactTwo {
+  width: auto;
+  height: 50%;
+}
+.bigContactBox .AskUs {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+}
+.bigContactBox .AskUs .AskUsBox {
+  width: 95%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+.bigContactBox .AskUs .writeBox {
+  width: 17rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bigContactBox .AskUs .writeBox input {
+  width: 10rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  margin: 10px;
+}
+.bigContactBox .AskUs .writeBox select {
+  text-overflow: hidden;
+  width: 10rem;
+  height: 1.5rem;
+}
+.bigContactBox .AskUs .writeBox select option:first-child {
+  display: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bigContactBox .AskUs .userInput {
+  width: 100%;
+  height: 20%;
+}
+.bigContactBox .AskUs .userInput .comments {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bigContactBox .AskUs .userInput .comments input {
+  width: 20rem;
+  height: 8rem;
+}
+.bigContactBox .AskUs .userInput .comments button {
+  width: 10rem;
+  height: 2.4rem;
+  margin-top: 10px;
+  background-color: orange;
+}/*# sourceMappingURL=styles.css.map */
