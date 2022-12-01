@@ -44,10 +44,11 @@ main {
 
       h1 {
         color: white;
-        @include header-style ('Montserrat', 15.5vw, center);
+        @include header-style ('Montserrat', 9vw, center);
+        font-style: italic;
 
         @media screen and (min-width:600px) {
-          font-size: 6rem;
+          font-size: 3rem;
 
         }
       }
@@ -336,9 +337,8 @@ footer {
     background-color: #d4235e;
     display: flex;
 
-
     .copyWriteBoxes {
-      @include size (auto, 100%);
+      @include size (100%, 100%);
       display: flex;
       justify-content: space-around;
 
@@ -424,7 +424,20 @@ footer {
 .omOssPage {
   @include size (auto, auto);
 
-  border: 2px solid black;
+
+  .omOssRubrikText {
+    @include size (auto, auto);
+
+    h2 {
+      text-align: center;
+      font-family: 'Montserrat';
+      font-size: 2rem;
+    }
+
+    p {
+      font-family: 'Montserrat';
+    }
+  }
 
   .omOssRubrik {
     @include size (auto, 5rem);
@@ -438,6 +451,7 @@ footer {
 
 }
 
+
 .ourEmployes {
   @include size (auto, auto);
   @include mediumFlexItems (column, space-evenly, center);
@@ -448,10 +462,12 @@ footer {
 
   }
 
+
   .employes {
     @include size (15rem, auto);
     align-content: center;
     margin: 20px;
+    font-family: 'Montserrat';
 
     #employePhoto {
       @include size (15rem, auto);
@@ -459,8 +475,10 @@ footer {
       border-radius: 20rem;
     }
 
-    h3 {
-      font-family: 'Montserrat'
+
+    #contactStyle {
+      color: black;
+      font-weight: 400;
     }
 
     p {
@@ -481,7 +499,8 @@ footer {
 
   h2 {
     font-family: 'Montserrat';
-    align-self: center;
+    text-align: center;
+    font-size: 2rem;
   }
 
 
@@ -513,10 +532,17 @@ footer {
       display: flex;
       margin: 10px;
 
+
       @media screen and (min-width: 600px) {
-        @include size (30rem, 10rem);
+        @include size (30rem, 14rem);
         justify-content: space-evenly;
         margin: 10px;
+      }
+
+      p {
+        font-family: 'Montserrat';
+        font-size: 0.7rem;
+        text-align: center
       }
 
 
@@ -532,7 +558,7 @@ footer {
 
         h4 {
           font-family: 'Montserrat';
-          font-weight: bolder;
+          font-style: italic;
           margin: 10px;
         }
 
@@ -571,6 +597,8 @@ footer {
 
   .treatment {
     @include size (45%, auto);
+    display: flex;
+    flex-direction: column;
 
 
     li {
@@ -584,7 +612,7 @@ footer {
   }
 
   .vertical-line {
-    @include size (0.05px, 24rem);
+    @include size (0.05px, 14rem);
     border: 1px dotted black;
     margin-left: 40px;
     margin-top: 20px;
@@ -592,6 +620,8 @@ footer {
 
   .treatmentPrice {
     @include size (45%, auto);
+    display: flex;
+    flex-direction: column;
 
     ul {
       @include size (auto, auto);
@@ -620,6 +650,7 @@ footer {
   h2 {
     font-family: 'Montserrat';
     text-align: center;
+    font-size: 2rem;
   }
 
   h3 {
@@ -642,6 +673,10 @@ footer {
     @include size (100%, auto);
     text-align: center;
 
+    p {
+      font-family: 'Montserrat';
+    }
+
 
     @media screen and (min-width:600px) {
       text-align: center;
@@ -662,11 +697,17 @@ footer {
 
   .bigBoxBars {
     @include size (100%, auto);
+    max-width: 50rem;
 
     .side {
       float: left;
       width: 15%;
       margin-top: 10px;
+
+      span {
+        font-family: 'Montserrat';
+        font-size: 0.8rem;
+      }
     }
 
     .middle {
@@ -729,11 +770,13 @@ footer {
 
   @media screen and (min-width: 600px) {
     @include bigFlex (row, space-between, center, wrap);
+    height: auto;
 
   }
 
   @media screen and (min-width: 1000px) {
     @include bigFlex (row, space-evenly, center, wrap);
+    height: auto;
   }
 
 
@@ -790,6 +833,10 @@ footer {
     font-size: 1rem;
   }
 
+  #reviewCommenting {
+    color: black;
+  }
+
   p {
     font-family: 'Montserrat';
     font-size: 0.8rem;
@@ -801,6 +848,7 @@ footer {
 
 #male-review {
   @include size (4rem, 4rem);
+  margin: 5px
 }
 
 .writeReview {
@@ -886,68 +934,67 @@ footer {
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 600px) {
-    flex-direction: row;
-    @include size (auto, 47.3rem);
 
+
+
+  h2 {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 2rem;
   }
+
+
 
   .smallBoxesContact {
     @include size (auto, 100%);
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width:600px) {
-      flex-direction: row;
-      width: 100%;
-
-    }
 
     .ourBuilding {
-      @include size (auto, 50%);
+      @include size (auto, auto);
+
+
 
       #myBuilding {
-        @include size (100%, 50%);
-        object-fit: contain;
+        @include size (100%, 100%);
 
-        @media screen and (min-width:600px) {
-          width: 40rem;
-          height: 40rem;
-        }
+
+        @media screen and (min-width:900px) {}
       }
     }
 
-    .ourAdress {
-      @include size (auto, 50%);
+
+  }
+
+  .ourAdress {
+    @include size (100%, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+
+
+    p {
+      font-size: 0.8rem;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      margin: 1.4rem;
+    }
+
+    span i {
+      font-size: 2em;
+      margin: 0.9rem;
+      color: $contact-iconcolor;
+    }
+
+    .ourInformationBox {
+      @include size (30rem, auto);
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
-      p {
-        font-size: 0.8rem;
-        font-family: 'Montserrat';
-        font-weight: 500;
-        margin: 1.4rem;
-      }
-
-
-      span i {
-        font-size: 2em;
-        margin: 0.9rem;
-        color: $contact-iconcolor;
-      }
-
-      @media screen and (min-width:600px) {
-        width: 40%;
-        height: 29.4rem;
-      }
-
-      .ourInformationBox {
-        @include size (47%, auto);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
     }
   }
 
@@ -958,6 +1005,12 @@ footer {
   .AskUs {
     @include size (100%, 25rem);
     @include miniFlex(column);
+
+
+    @media screen and (min-width:800px) {
+      width: 100%;
+
+    }
 
     .AskUsBox {
       @include size (95%, 40%);

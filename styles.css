@@ -40,12 +40,13 @@ main {
 .wholeTopPage .topUpperForHeader header h1 {
   color: white;
   font-family: "Montserrat";
-  font-size: 15.5vw;
+  font-size: 9vw;
   align-self: center;
+  font-style: italic;
 }
 @media screen and (min-width: 600px) {
   .wholeTopPage .topUpperForHeader header h1 {
-    font-size: 6rem;
+    font-size: 3rem;
   }
 }
 .wholeTopPage .navBar {
@@ -339,7 +340,7 @@ footer .copyWrite {
   display: flex;
 }
 footer .copyWrite .copyWriteBoxes {
-  width: auto;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -421,7 +422,18 @@ footer .copyWrite .copyWriteBoxes p {
 .omOssPage {
   width: auto;
   height: auto;
-  border: 2px solid black;
+}
+.omOssPage .omOssRubrikText {
+  width: auto;
+  height: auto;
+}
+.omOssPage .omOssRubrikText h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+.omOssPage .omOssRubrikText p {
+  font-family: "Montserrat";
 }
 .omOssPage .omOssRubrik {
   width: auto;
@@ -452,6 +464,7 @@ footer .copyWrite .copyWriteBoxes p {
   height: auto;
   align-content: center;
   margin: 20px;
+  font-family: "Montserrat";
 }
 .ourEmployes .employes #employePhoto {
   width: 15rem;
@@ -460,8 +473,9 @@ footer .copyWrite .copyWriteBoxes p {
      object-fit: contain;
   border-radius: 20rem;
 }
-.ourEmployes .employes h3 {
-  font-family: "Montserrat";
+.ourEmployes .employes #contactStyle {
+  color: black;
+  font-weight: 400;
 }
 .ourEmployes .employes p {
   color: rgb(179, 29, 29);
@@ -480,7 +494,8 @@ footer .copyWrite .copyWriteBoxes p {
 }
 .productMiddlePage h2 {
   font-family: "Montserrat";
-  align-self: center;
+  text-align: center;
+  font-size: 2rem;
 }
 @media screen and (min-width: 600px) {
   .productMiddlePage {
@@ -525,10 +540,15 @@ footer .copyWrite .copyWriteBoxes p {
 @media screen and (min-width: 600px) {
   .productMiddlePage .productLeftSide .productone {
     width: 30rem;
-    height: 10rem;
+    height: 14rem;
     justify-content: space-evenly;
     margin: 10px;
   }
+}
+.productMiddlePage .productLeftSide .productone p {
+  font-family: "Montserrat";
+  font-size: 0.7rem;
+  text-align: center;
 }
 .productMiddlePage .productLeftSide .productone .leftSideProduct {
   width: 90%;
@@ -540,7 +560,7 @@ footer .copyWrite .copyWriteBoxes p {
 }
 .productMiddlePage .productLeftSide .productone .leftSideProduct h4 {
   font-family: "Montserrat";
-  font-weight: bolder;
+  font-style: italic;
   margin: 10px;
 }
 .productMiddlePage .productLeftSide .productone .rightSideButton {
@@ -577,6 +597,8 @@ footer .copyWrite .copyWriteBoxes p {
 .pricelistRightSide .treatment {
   width: 45%;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 .pricelistRightSide .treatment li {
   width: 100%;
@@ -588,7 +610,7 @@ footer .copyWrite .copyWriteBoxes p {
 }
 .pricelistRightSide .vertical-line {
   width: 0.05px;
-  height: 24rem;
+  height: 14rem;
   border: 1px dotted black;
   margin-left: 40px;
   margin-top: 20px;
@@ -596,6 +618,8 @@ footer .copyWrite .copyWriteBoxes p {
 .pricelistRightSide .treatmentPrice {
   width: 45%;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 .pricelistRightSide .treatmentPrice ul {
   width: auto;
@@ -620,6 +644,7 @@ footer .copyWrite .copyWriteBoxes p {
 .reviewBigBox h2 {
   font-family: "Montserrat";
   text-align: center;
+  font-size: 2rem;
 }
 .reviewBigBox h3 {
   font-family: "Montserrat";
@@ -641,6 +666,9 @@ footer .copyWrite .copyWriteBoxes p {
   height: auto;
   text-align: center;
 }
+.reviewBigBox .bigBoxScoreAverage p {
+  font-family: "Montserrat";
+}
 @media screen and (min-width: 600px) {
   .reviewBigBox .bigBoxScoreAverage {
     text-align: center;
@@ -658,11 +686,16 @@ footer .copyWrite .copyWriteBoxes p {
 .reviewBigBox .bigBoxBars {
   width: 100%;
   height: auto;
+  max-width: 50rem;
 }
 .reviewBigBox .bigBoxBars .side {
   float: left;
   width: 15%;
   margin-top: 10px;
+}
+.reviewBigBox .bigBoxBars .side span {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
 }
 .reviewBigBox .bigBoxBars .middle {
   margin-top: 10px;
@@ -726,6 +759,7 @@ footer .copyWrite .copyWriteBoxes p {
     justify-content: space-between;
     align-self: center;
     flex-wrap: wrap;
+    height: auto;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -735,6 +769,7 @@ footer .copyWrite .copyWriteBoxes p {
     justify-content: space-evenly;
     align-self: center;
     flex-wrap: wrap;
+    height: auto;
   }
 }
 .bigBoxReviews .customerReview {
@@ -786,6 +821,9 @@ footer .copyWrite .copyWriteBoxes p {
   font-style: italic;
   font-size: 1rem;
 }
+.accountInfo #reviewCommenting {
+  color: black;
+}
 .accountInfo p {
   font-family: "Montserrat";
   font-size: 0.8rem;
@@ -795,6 +833,7 @@ footer .copyWrite .copyWriteBoxes p {
 #male-review {
   width: 4rem;
   height: 4rem;
+  margin: 5px;
 }
 
 .writeReview {
@@ -883,12 +922,10 @@ footer .copyWrite .copyWriteBoxes p {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 600px) {
-  .bigContactBox {
-    flex-direction: row;
-    width: auto;
-    height: 47.3rem;
-  }
+.bigContactBox h2 {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 2rem;
 }
 .bigContactBox .smallBoxesContact {
   width: auto;
@@ -896,54 +933,34 @@ footer .copyWrite .copyWriteBoxes p {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 600px) {
-  .bigContactBox .smallBoxesContact {
-    flex-direction: row;
-    width: 100%;
-  }
-}
 .bigContactBox .smallBoxesContact .ourBuilding {
   width: auto;
-  height: 50%;
+  height: auto;
 }
 .bigContactBox .smallBoxesContact .ourBuilding #myBuilding {
   width: 100%;
-  height: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100%;
 }
-@media screen and (min-width: 600px) {
-  .bigContactBox .smallBoxesContact .ourBuilding #myBuilding {
-    width: 40rem;
-    height: 40rem;
-  }
-}
-.bigContactBox .smallBoxesContact .ourAdress {
-  width: auto;
-  height: 50%;
+.bigContactBox .ourAdress {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.bigContactBox .smallBoxesContact .ourAdress p {
+.bigContactBox .ourAdress p {
   font-size: 0.8rem;
   font-family: "Montserrat";
   font-weight: 500;
   margin: 1.4rem;
 }
-.bigContactBox .smallBoxesContact .ourAdress span i {
+.bigContactBox .ourAdress span i {
   font-size: 2em;
   margin: 0.9rem;
   color: #063459;
 }
-@media screen and (min-width: 600px) {
-  .bigContactBox .smallBoxesContact .ourAdress {
-    width: 40%;
-    height: 29.4rem;
-  }
-}
-.bigContactBox .smallBoxesContact .ourAdress .ourInformationBox {
-  width: 47%;
+.bigContactBox .ourAdress .ourInformationBox {
+  width: 30rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -958,6 +975,11 @@ footer .copyWrite .copyWriteBoxes p {
   height: 25rem;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 800px) {
+  .bigContactBox .AskUs {
+    width: 100%;
+  }
 }
 .bigContactBox .AskUs .AskUsBox {
   width: 95%;
